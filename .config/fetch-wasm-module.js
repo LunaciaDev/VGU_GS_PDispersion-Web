@@ -5,6 +5,6 @@ import { execSync } from "node:child_process";
 execSync(`
     curl -L -o wasm.zip \
     https://github.com/LunaciaDev/VGU_GS_PDispersion-WASM/releases/download/v1.0/pdispersion-1.0.zip &&
-    unzip wasm.zip -d pkg &&
+    unzip -o wasm.zip -d pkg &&
     rm wasm.zip
 `);
